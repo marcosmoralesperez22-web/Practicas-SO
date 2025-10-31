@@ -78,7 +78,7 @@ void listar_procesos(struct proceso *procesos[])
         }
     }
 
-    /**** PRÁCTICA ****/
+    // /**** PRÁCTICA ****/
     /* Recorre el array de procesos con for, escribiendo con printf los campos
        de cada proceso. Si una posición está vacía, imprimir "Vacía" */
 }
