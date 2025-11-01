@@ -204,7 +204,7 @@ static void ejecutar_cd(const struct orden *orden)
     }
         //Cambiar el directorio actual a la ruta indicada
     //    Si chdir() devuelve -1, hubo un error (por ejemplo, la carpeta no existe)
-    if (chdir(directorio) == -1) //aqui lo que ocurre es que al no haber else si se ejecuta bien == 1 pues cambia al directorio
+    if (chdir(directorio) == -1) //aqui lo que ocurre es que al no haber else si se ejecuta bien pues cambia al directorio
     {
         perror(directorio);
     }
