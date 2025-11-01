@@ -1,0 +1,21 @@
+Cómo Estudiar las Prácticas
+
+Antes de cualquier línea de código, lee con atención el enunciado toda la práctica.
+
+Identifica qué te piden hacer: funciones, comportamientos, restricciones, casos especiales.
+
+Escribe tu mismo el codigo, no se programa mirando.
+
+Si trae código base, analiza cada función: qué hace, qué inputs recibe y qué output genera.
+
+Mientras lees o escribes código, comenta el propósito de funciones, variables y bloques complejos.
+
+
+Después de implementar, prueba la práctica
+
+Modifica el código para ver cómo afectan los cambios
+
+Esta un poco desordenada pero se entiende. 
+
+Con los test de notebookLM lo bordas.
+
