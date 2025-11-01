@@ -108,3 +108,5 @@ static void leer_lin(const char pregunta[], char respuesta[MAX_LEN])
         err = fgets(respuesta, MAX_LEN, stdin); /* leer la respuesta */
     }
     // fgets es una función que lee una línea de texto desde una fuente (como el teclado o un archivo) y la guarda en un array de caracteres.
+    
+}

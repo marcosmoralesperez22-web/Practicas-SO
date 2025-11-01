@@ -6,10 +6,10 @@
 /* estructura proceso con PID, ejecutable y estado */
 struct proceso
 {
-    int br0198_pid;                         /* declara un campo entero de nombre zz0000_pid donde zz0000
+    int br999_pid;                         /* declara un campo entero de nombre zz0000_pid donde zz0000
                                 será tu matrícula */
-    char br0198_ejecutable[MAX_EJECUTABLE]; /* declara un campo de tipo array de caracteres de longitud MAX_EJECUTABLE de nombre zz0000_ejecutable */
-    int br0198_estado;                      /* declara un campo entero de nombre zz0000_estado */
+    char br999_ejecutable[MAX_EJECUTABLE]; /* declara un campo de tipo array de caracteres de longitud MAX_EJECUTABLE de nombre zz0000_ejecutable */
+    int br999_estado;                      /* declara un campo entero de nombre zz0000_estado */
 
     /**** PRÁCTICA ****/
 };
@@ -39,17 +39,17 @@ int anadir_proceso(struct proceso *procesos[], int ix, int pid,
        Devuelve MEM_ERROR
     */
 
-    nuevo->br0198_pid = pid;
+    nuevo->br999_pid = pid;
 
     /* Modifica el valor del pid de la estructura reservada
        dinámicamente accediendo a través del operador '->' */
 
-    strncpy(nuevo->br0198_ejecutable, ejecutable, MAX_EJECUTABLE);
+    strncpy(nuevo->br999_ejecutable, ejecutable, MAX_EJECUTABLE);
 
     /* Utiliza la función strncpy para copiar el parámetro con la ruta del
     ejecutable a la estructura */
 
-    nuevo->br0198_estado = estado;
+    nuevo->br999_estado = estado;
     /* establece su estado */
     procesos[ix] = nuevo;
     /* Asigna a la posición ix del array de punteros el nuevo registro */
@@ -70,9 +70,9 @@ void listar_procesos(struct proceso *procesos[])
         else
         {
             printf("Posicion de tabla %d:%d %s %d\n", i,
-                   procesos[i]->br0198_pid,
-                   procesos[i]->br0198_ejecutable,
-                   procesos[i]->br0198_estado
+                   procesos[i]->br999_pid,
+                   procesos[i]->br999_ejecutable,
+                   procesos[i]->br999_estado
 
             );
         }

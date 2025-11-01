@@ -1,0 +1,67 @@
+//Aqui voy a escribir teoria y comandos
+
+
+
+//c es muy similar a java o python pero no proporciona ninguna facilidad para el diseñado orientado a objetos
+
+//Por qué se usa si presenta dificultades para objetos?
+
+//Pues porque es un lenguaje que se traduce a codigo maquina, que es interpretado por el hardware. Tambien permite el acceso a bajo nivel y esto proporciona potencia, especialmente en el manejo de memoria. (pero un error puede ser "mortal(dificil de resolver xd)")
+
+ // la extension .h se usa para hacer la parte publica del modulo: macros y constantes
+ //.c es donde se definen las funciones publicas y privadas
+
+ //los elementos que tienen que ser no visibles deben llevar un static
+
+ //si tuvieramos que hacer una funcion cuenta_palabras tendrá su prototipo en .h que incluira todos los archivos de codigo que necesita y su implementacion estará solo en un archivo de extension.c
+
+ //todos los programas tienen que tener un main()
+
+
+ //lo que vamos a ver es como C obtiene un fichero ejecutable
+
+ //en esta practica se hace manualmente con unos comandos
+
+
+//en esta carpeta se encuentra la foto importante Imagenes\ficheroEjecutable.png
+
+
+//date cuenta de que actua primero un preprocesador, luego para analizar el codigo un compilador,genera un archivo objeto y es el enlazador el que junta este archivo con los otros modulos. Y ese fichero ejecutable necesita ser cargado por el cargador en memoria principal para poder ejecutarlo.
+
+
+$ cc -E 1ejemplo.c -o 1ejemplo-pre.c
+
+//lo que esta ocurriendo es que estamos haciendo un preprocesado en 1ejemplo.c y se lo pasamos a 1ejemplo-pre.c
+
+//el .c tiene que tener el #include del .h  y los demas includes
+//en 1ejemplo-pre.c tendriamos que tener #include 1ejemplo.h
+
+//compilado y enlazado -->
+$ cc 1ejemplo-br999.c -o 1ejemplo-br999
+
+//ejecuta
+$ ./1ejemplo-br999
+
+//borrarlo?
+
+rm 1ejemplo-br999
+
+//se puede hacer preprocesar,compilar y enlazar en una linea:
+$ cc -c 1ejemplo-br999.c -o 1ejemplo-br999.o
+
+//solo tenemos el fichero objeto necesitamos el programa ejecutable--->
+$ cc 1ejemplo-br999.o -o 1ejemplo-br999
+
+
+//MAKE
+
+
+//Makefile es un conjunto de ordenes que tiene que seguir make
+
+//se recomienda hacer esta parte de la practica 2 para entenderlo. 
+
+//se sigue snake_case en todas las practicas ---> int culo_gordo = 20;
+
+//las variables se les pone esa nomenclatura
+
+//pasa al archivo de punteros

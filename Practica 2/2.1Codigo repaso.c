@@ -1,4 +1,4 @@
-
+// un poco de codigo de repaso para C
 
 int Marcos = 23; // variable global inicializada
 int Mario;       // variable global no inicializada
@@ -7,6 +7,9 @@ int Mario;       // variable global no inicializada
 // inicializada cuando se le da un valor
 
 /*Declaracion del tipo que representa un DNI*/
+
+
+
 
 struct dni
 {
@@ -45,3 +48,12 @@ else
 }
 
 // \n para salto de linea
+
+
+//para saber la cantidad de bytes necesarios para representar un elemento de un determinado tipo se usa syzeof
+
+
+//si char=1
+//si float = 4
+sizeof(char)
+sizeof(long long) seria 8
